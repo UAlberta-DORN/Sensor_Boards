@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -81,6 +81,7 @@
 <hole x="4" y="4" drill="3.3"/>
 <hole x="37" y="4" drill="3.3"/>
 <hole x="37" y="32" drill="3.3"/>
+<text x="34" y="33" size="1.778" layer="26" rot="MR0">Owen Wilson 2021</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1479,7 +1480,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="33.02" y="26.4" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="63" x="10.16" y="36.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="10.16" y="36.56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="33.37" y="22.13" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="33.37" y="22.13" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="IC1" library="OPT3001DNPR" package="SON65P200X200X65-7N" value="OPT3001DNPR" x="30.48" y="9.89" smashed="yes" rot="R180">
 <attribute name="ARROW_PART_NUMBER" value="OPT3001DNPR" x="10.16" y="36.56" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1491,7 +1492,7 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PART_NUMBER" value="595-OPT3001DNPR" x="10.16" y="36.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPT3001DNPR?qs=bZA2O%252B%252B1GJtKOS2%252BWqaE4Q%3D%3D" x="10.16" y="36.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="33.56" y="5.89" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="29.48" y="7.35" size="1.27" layer="27" rot="R180" align="center"/>
+<attribute name="VALUE" x="29.48" y="7.35" size="1.27" layer="25" rot="R180" align="center"/>
 </element>
 <element name="IC2" library="TMP116NAIDRVR" package="SON65P200X200X80-7N" value="TMP116NAIDRVR" x="30.48" y="30.21" smashed="yes">
 <attribute name="ARROW_PART_NUMBER" value="TMP116NAIDRVR" x="52.07" y="7.35" size="1.778" layer="27" display="off"/>
@@ -1503,13 +1504,13 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PART_NUMBER" value="595-TMP116NAIDRVR" x="52.07" y="7.35" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TMP116NAIDRVR?qs=gt1LBUVyoHkjMpHhmYqq%252BQ%3D%3D" x="52.07" y="7.35" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="33.56" y="31.94" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="28.48" y="33.75" size="1.27" layer="27" align="center"/>
+<attribute name="VALUE" x="28.48" y="33.75" size="1.27" layer="25" align="center"/>
 </element>
 <element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="17.78" y="9.89" smashed="yes">
 <attribute name="NAME" x="13.335" y="9.255" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="77" x="45.72" y="-2.81" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="45.72" y="-2.81" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="20.335" y="7.715" size="1.27" layer="27"/>
+<attribute name="VALUE" x="20.335" y="7.715" size="1.27" layer="25"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="17.78" y="16.24" smashed="yes">
 <attribute name="NAME" x="13.335" y="16.875" size="1.27" layer="25"/>
@@ -1575,10 +1576,8 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="9.89" x2="29.013965625" y2="9.89" width="0.508" layer="1"/>
 <wire x1="16.93" y1="14.55" x2="17.78" y2="13.7" width="0.508" layer="1"/>
 <wire x1="16.93" y1="16.24" x2="16.93" y2="14.55" width="0.508" layer="1"/>
-<wire x1="24.13" y1="13.7" x2="25.4" y2="12.43" width="0.508" layer="1"/>
-<wire x1="25.4" y1="12.43" x2="25.4" y2="11.16" width="0.508" layer="1"/>
-<wire x1="25.4" y1="11.16" x2="26.67" y2="9.89" width="0.508" layer="1"/>
-<wire x1="17.78" y1="13.7" x2="24.13" y2="13.7" width="0.508" layer="1"/>
+<wire x1="22.86" y1="13.7" x2="26.67" y2="9.89" width="0.508" layer="1"/>
+<wire x1="17.78" y1="13.7" x2="22.86" y2="13.7" width="0.508" layer="1"/>
 <wire x1="29.013965625" y1="9.89" x2="29.48" y2="9.89" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
@@ -1590,11 +1589,8 @@ design rules under a new name.</description>
 <wire x1="12.39" y1="19.32" x2="6.35" y2="19.32" width="0.508" layer="1"/>
 <wire x1="16.93" y1="23.86" x2="16.93" y2="20.9" width="0.508" layer="1"/>
 <wire x1="16.93" y1="20.9" x2="17.78" y2="20.05" width="0.508" layer="1"/>
-<wire x1="17.78" y1="20.05" x2="26.67" y2="20.05" width="0.508" layer="1"/>
-<wire x1="26.67" y1="20.05" x2="27.94" y2="18.78" width="0.508" layer="1"/>
-<wire x1="27.94" y1="18.78" x2="27.94" y2="11.16" width="0.508" layer="1"/>
-<wire x1="27.94" y1="11.16" x2="28.448" y2="10.652" width="0.508" layer="1"/>
-<wire x1="28.448" y1="10.652" x2="29.59083125" y2="10.652" width="0.508" layer="1"/>
+<wire x1="17.78" y1="20.05" x2="21.19283125" y2="20.05" width="0.508" layer="1"/>
+<wire x1="21.19283125" y1="20.05" x2="29.59083125" y2="11.652" width="0.508" layer="1"/>
 <wire x1="29.59083125" y1="10.652" x2="29.59431875" y2="10.6485125" width="0.508" layer="1"/>
 <wire x1="6.35" y1="19.32" x2="4.68" y2="19.32" width="0.508" layer="1"/>
 <wire x1="4.68" y1="19.32" x2="3" y2="21" width="0.508" layer="1"/>
@@ -1604,6 +1600,7 @@ design rules under a new name.</description>
 <wire x1="27.652584375" y1="32.75" x2="29.43" y2="30.972584375" width="0.508" layer="1"/>
 <wire x1="29.48" y1="10.54" x2="29.59083125" y2="10.65083125" width="0.254" layer="1"/>
 <wire x1="29.59083125" y1="10.65083125" x2="29.59083125" y2="10.652" width="0.254" layer="1"/>
+<wire x1="29.59083125" y1="10.652" x2="29.59083125" y2="11.652" width="0.508" layer="1"/>
 <wire x1="29.43" y1="30.972584375" x2="29.43" y2="30.86" width="0.254" layer="1"/>
 </signal>
 <signal name="GND" class="1">
@@ -1657,9 +1654,8 @@ design rules under a new name.</description>
 <via x="21.59" y="9.89" extent="1-16" drill="0.508"/>
 <via x="21.59" y="16.24" extent="1-16" drill="0.508"/>
 <via x="21.59" y="23.86" extent="1-16" drill="0.508"/>
-<wire x1="11.43" y1="11.7" x2="11.43" y2="8.62" width="0.508" layer="1"/>
-<wire x1="11.43" y1="8.62" x2="12.7" y2="7.35" width="0.508" layer="1"/>
-<wire x1="6.35" y1="11.7" x2="11.43" y2="11.7" width="0.508" layer="1"/>
+<wire x1="8.35" y1="11.7" x2="12.7" y2="7.35" width="0.508" layer="1"/>
+<wire x1="6.35" y1="11.7" x2="8.35" y2="11.7" width="0.508" layer="1"/>
 <wire x1="21.59" y1="16.24" x2="18.63" y2="16.24" width="0.508" layer="1"/>
 <wire x1="21.59" y1="23.86" x2="18.63" y2="23.86" width="0.508" layer="1"/>
 <contactref element="R4" pad="2"/>

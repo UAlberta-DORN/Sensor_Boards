@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-01-29T03:57:07Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "sensor_board_Final"
+        },
+        "Owner": "Owen Wilson <owilson@ualberta.ca>",
+        "Size": {
+            "X": 40.58,
+            "Y": 36.28
+        }
+    }
+}
