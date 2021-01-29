@@ -1285,7 +1285,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <class number="2" name="digital" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1680,11 +1680,11 @@ design rules under a new name.</description>
 <wire x1="31.48" y1="9.1315875" x2="31.48" y2="9.24" width="0.254" layer="1"/>
 <wire x1="31.53" y1="30.21" x2="31.53" y2="29.56" width="0.254" layer="1"/>
 <wire x1="31.80579375" y1="8.80579375" x2="31.48" y2="9.1315875" width="0.254" layer="1"/>
+<wire x1="21.59" y1="30.21" x2="21.59" y2="9.89" width="1" layer="16"/>
 <wire x1="21.59" y1="9.89" x2="19.05" y2="7.35" width="1" layer="16"/>
 <wire x1="19.05" y1="7.35" x2="12.7" y2="7.35" width="1" layer="16"/>
-<wire x1="21.59" y1="30.21" x2="21.59" y2="23.86" width="1" layer="16"/>
-<wire x1="21.59" y1="23.86" x2="21.59" y2="9.89" width="1" layer="16"/>
-<wire x1="21.59" y1="16.24" x2="21.59" y2="9.89" width="1" layer="16"/>
+<wire x1="18.63" y1="30.21" x2="18.63" y2="23.86" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="16.24" x2="21.59" y2="9.89" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

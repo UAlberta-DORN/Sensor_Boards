@@ -8423,10 +8423,6 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
-<approved hash="113,1,208.678,165.1,X2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
