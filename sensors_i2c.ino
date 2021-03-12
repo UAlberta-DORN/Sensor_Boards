@@ -3,8 +3,8 @@
 // volatile int alarm;
 
 // Device addresses
-const int OPT3001_Address = 0x48;
-const int TMP116_Address = 0x49;
+const int OPT3001_Address = 0x44;
+const int TMP116_Address = 0x45;
 
 // Hexadecimal addresses for various OPT3001 registers
 const int OPT_Reg = 0x00;                // OPTical register
