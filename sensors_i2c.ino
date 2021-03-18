@@ -53,6 +53,8 @@ void setup() {
   // Sets up Pin 2 to trigger "alert" ISR when pin changes H->L and L->H
   attachInterrupt(digitalPinToInterrupt(2), alert, CHANGE);
 
+  Serial.println("Light Intensity (Lux)\tTemperature (C)");
+
 //  alarm = digitalRead(2);
 }
 
@@ -61,7 +63,8 @@ void loop() {
   I2Cwrite(OPT3001_Address, OPT_Config_Reg, 0xC2, 0x00);
   // Request and calculate OPTical lux reading
   double OPT_data = ReadOPTSensor();
-  Serial.println(OPT_data);
+  Serial.print(OPT_data);
+  Serial.print("\t\t\t");
 
   delay(10);
 
