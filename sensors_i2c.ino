@@ -4,7 +4,7 @@
 
 // Device addresses
 const int OPT3001_Address = 0x44;
-const int TMP116_Address = 0x45;
+const int TMP116_Address = 0x49;
 
 // Hexadecimal addresses for various OPT3001 registers
 const int OPT_Reg = 0x00;                // OPTical register
@@ -35,8 +35,8 @@ const uint8_t Temp_lowlimL = B00000000;  // Low byte of low lim    - Low 24 C
 
 void setup() {
 
-  Wire.begin(22,23);
-  Serial.begin(9600);
+  Wire.begin(21,22);
+  Serial.begin(115200);
 
   // Write limits to OPT register
   I2Cwrite(OPT3001_Address, OPT_High_Lim_Reg, OPT_highlimH, OPT_highlimL);
@@ -61,6 +61,7 @@ void loop() {
   I2Cwrite(OPT3001_Address, OPT_Config_Reg, 0xC2, 0x00);
   // Request and calculate OPTical lux reading
   double OPT_data = ReadOPTSensor();
+  Serial.println(OPT_data);
 
   delay(10);
 
@@ -68,6 +69,7 @@ void loop() {
   I2Cwrite(TMP116_Address, Temp_Config_Reg, 0x0C, 0x20);
   // Request and calculate temperature reading
   double temp_data = ReadTempSensor();
+  Serial.println(temp_data);
 
   delay(500);
 }
